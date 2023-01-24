@@ -5,7 +5,7 @@ const riddle = {
   tries: 3,
   countTries: 1,
   checkAnswer(str) {
-    if (str.toLowerCase() === this.correctAnswer && this.tries > 0) {
+    if (str.toLowerCase().trim() === this.correctAnswer && this.tries > 0) {
       alert(
         `Это правильный ответ! Вы угадали ответ с ${this.countTries} попыток!`
       )
